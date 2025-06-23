@@ -68,7 +68,7 @@ export function Navigation() {
           >
             <Phone className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
             <span className="hidden lg:inline">01558441880</span>
-            <span className="lg:hidden">Book</span>
+            <span className="lg:hidden">01558441880</span>
           </Button>
 
           {/* Mobile Navigation */}

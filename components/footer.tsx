@@ -36,11 +36,11 @@ export function Footer() {
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-sm text-muted-foreground font-mono">
                 <MapPin className="h-4 w-4" />
-                <span>123 Hotel Street, City Center</span>
+                <span>{"Hotel Zy Rangamati Residential, Officers Colony, Tabalchari\nRangamati, 4500"}</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-muted-foreground font-mono">
                 <Phone className="h-4 w-4" />
-                <span>+1 (555) 123-4567</span>
+                <span>01558441880</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-muted-foreground font-mono">
                 <Mail className="h-4 w-4" />

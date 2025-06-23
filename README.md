@@ -2,30 +2,27 @@
 
 A modern, responsive website for Hotel ZY built with Next.js, TypeScript, and Tailwind CSS.
 
-## 🚀 Live Website
+## 🚀 GitHub Pages Deployment
 
-Visit the live website at: **https://najmulnahid987.github.io/hotel-gy/**
+This website is optimized for GitHub Pages hosting with static export configuration.
 
-## 📋 GitHub Pages Setup Instructions
+### Quick Deploy Steps:
 
-### Step 1: Enable GitHub Pages
-1. Go to your repository: `https://github.com/najmulnahid987/hotel-gy`
-2. Click on **Settings** tab
-3. Scroll down to **Pages** section in the left sidebar
-4. Under **Source**, select:
-   - Source: **"GitHub Actions"** (not "Deploy from a branch")
-5. Click **Save**
+1. **Fork or Clone** this repository
+2. **Enable GitHub Pages** in repository settings:
+   - Go to Settings → Pages
+   - Source: Deploy from a branch
+   - Branch: main
+   - Folder: / (root)
+3. **Push changes** to main branch
+4. **Wait for deployment** (usually 2-5 minutes)
 
-### Step 2: Trigger Deployment
-1. Go to the **Actions** tab in your repository
-2. Click **"I understand my workflows, go ahead and enable them"** if prompted
-3. The deployment should start automatically
-4. Wait for the green checkmark (usually 2-5 minutes)
+### Your website will be available at:
+\`\`\`
+https://[your-username].github.io/[repository-name]
+\`\`\`
 
-### Step 3: Access Your Website
-Your website will be available at: `https://najmulnahid987.github.io/hotel-gy/`
-
-## 🔧 Local Development
+## 🛠️ Local Development
 
 \`\`\`bash
 # Install dependencies
@@ -36,14 +33,18 @@ npm run dev
 
 # Build for production
 npm run build
+
+# Export static files
+npm run export
 \`\`\`
 
 ## 📁 Project Structure
 
 \`\`\`
-hotel-gy/
+hotel-zy/
 ├── app/                 # Next.js App Router pages
 ├── components/          # Reusable React components
+├── lib/                # Utility functions
 ├── public/             # Static assets (images, icons)
 ├── .github/workflows/  # GitHub Actions for deployment
 └── next.config.mjs     # Next.js configuration
@@ -59,21 +60,51 @@ hotel-gy/
 - 🗺️ **Google Maps** - Interactive location map
 - 🖼️ **Image Gallery** - Organized photo showcase
 - 🏨 **Room Showcase** - Detailed room information
+- 📧 **Contact Form** - Easy inquiry submission
 
-## 🛠️ Configuration
+## 🔧 Configuration
 
-The website is configured for GitHub Pages with:
+The website is pre-configured for GitHub Pages with:
+
 - ✅ Static export enabled
-- ✅ Proper base path handling (`/hotel-gy`)
 - ✅ Image optimization disabled for static hosting
-- ✅ Automated deployment via GitHub Actions
+- ✅ Proper base path handling
+- ✅ SEO optimization
+- ✅ PWA manifest
+- ✅ Automated deployment workflow
 
-## 📞 Contact Information
+## 📝 Customization
 
-- **Phone**: 01558441880
-- **WhatsApp**: https://wa.me/8801558441880
-- **Location**: Rangamati, Bangladesh
+### Update Hotel Information:
+- Edit contact details in `app/contact/page.tsx`
+- Update hotel name and branding in `components/navigation.tsx`
+- Modify room information in `app/rooms/page.tsx`
+
+### Replace Images:
+- Add your images to `public/images/`
+- Update image references in components
+- Maintain the same file structure for best results
+
+### Styling:
+- Colors and themes: `app/globals.css`
+- Component styles: Individual component files
+- Tailwind config: `tailwind.config.ts`
+
+## 🌐 Browser Support
+
+- ✅ Chrome (latest)
+- ✅ Firefox (latest)
+- ✅ Safari (latest)
+- ✅ Edge (latest)
+- ✅ Mobile browsers
+
+## 📞 Support
+
+For technical support or customization requests, please create an issue in this repository.
 
 ---
 
 Built with ❤️ using Next.js and deployed on GitHub Pages
+\`\`\`
+
+Let's create a .gitignore file to exclude unnecessary files:

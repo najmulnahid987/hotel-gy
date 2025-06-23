@@ -2,8 +2,6 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  skipTrailingSlashRedirect: true,
-  distDir: 'out',
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -13,8 +11,14 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/hotel-gy' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/hotel-gy/' : '',
+  // Configure base path for GitHub Pages
+  // This will be set automatically by GitHub Actions
+  basePath: process.env.NODE_ENV === 'production' ? process.env.BASE_PATH || '' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? process.env.BASE_PATH || '' : '',
+  // Disable server-side features for static export
+  experimental: {
+    esmExternals: 'loose'
+  }
 }
 
 export default nextConfig
