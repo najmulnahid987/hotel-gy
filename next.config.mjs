@@ -13,7 +13,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Configure base path for GitHub Pages
   basePath: process.env.NODE_ENV === 'production' ? '/hotel-gy' : '',
   assetPrefix: process.env.NODE_ENV === 'production' ? '/hotel-gy/' : '',
 }
