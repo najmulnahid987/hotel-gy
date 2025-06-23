@@ -1,30 +1,79 @@
-# Hotel website design
+# Hotel ZY Website
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A modern, responsive website for Hotel ZY built with Next.js, TypeScript, and Tailwind CSS.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/najmulnahid987-gmailcoms-projects/v0-hotel-website-design)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/VDMZMFLjrOY)
+## 🚀 Live Website
 
-## Overview
+Visit the live website at: **https://najmulnahid987.github.io/hotel-gy/**
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## 📋 GitHub Pages Setup Instructions
 
-## Deployment
+### Step 1: Enable GitHub Pages
+1. Go to your repository: `https://github.com/najmulnahid987/hotel-gy`
+2. Click on **Settings** tab
+3. Scroll down to **Pages** section in the left sidebar
+4. Under **Source**, select:
+   - Source: **"GitHub Actions"** (not "Deploy from a branch")
+5. Click **Save**
 
-Your project is live at:
+### Step 2: Trigger Deployment
+1. Go to the **Actions** tab in your repository
+2. Click **"I understand my workflows, go ahead and enable them"** if prompted
+3. The deployment should start automatically
+4. Wait for the green checkmark (usually 2-5 minutes)
 
-**[https://vercel.com/najmulnahid987-gmailcoms-projects/v0-hotel-website-design](https://vercel.com/najmulnahid987-gmailcoms-projects/v0-hotel-website-design)**
+### Step 3: Access Your Website
+Your website will be available at: `https://najmulnahid987.github.io/hotel-gy/`
 
-## Build your app
+## 🔧 Local Development
 
-Continue building your app on:
+\`\`\`bash
+# Install dependencies
+npm install
 
-**[https://v0.dev/chat/projects/VDMZMFLjrOY](https://v0.dev/chat/projects/VDMZMFLjrOY)**
+# Run development server
+npm run dev
 
-## How It Works
+# Build for production
+npm run build
+\`\`\`
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+## 📁 Project Structure
+
+\`\`\`
+hotel-gy/
+├── app/                 # Next.js App Router pages
+├── components/          # Reusable React components
+├── public/             # Static assets (images, icons)
+├── .github/workflows/  # GitHub Actions for deployment
+└── next.config.mjs     # Next.js configuration
+\`\`\`
+
+## ✨ Features
+
+- 📱 **Fully Responsive** - Works on all devices
+- 🎨 **Modern UI** - Clean, professional design
+- 🌙 **Dark Mode** - Toggle between light and dark themes
+- 📞 **Click-to-Call** - Direct phone integration
+- 💬 **WhatsApp Integration** - Direct messaging
+- 🗺️ **Google Maps** - Interactive location map
+- 🖼️ **Image Gallery** - Organized photo showcase
+- 🏨 **Room Showcase** - Detailed room information
+
+## 🛠️ Configuration
+
+The website is configured for GitHub Pages with:
+- ✅ Static export enabled
+- ✅ Proper base path handling (`/hotel-gy`)
+- ✅ Image optimization disabled for static hosting
+- ✅ Automated deployment via GitHub Actions
+
+## 📞 Contact Information
+
+- **Phone**: 01558441880
+- **WhatsApp**: https://wa.me/8801558441880
+- **Location**: Rangamati, Bangladesh
+
+---
+
+Built with ❤️ using Next.js and deployed on GitHub Pages
